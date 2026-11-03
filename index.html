@@ -1,3 +1,89 @@
-<h1>Guilherme F. Saraiva</h1>
-<h2>Brigham Young University</h2>
-<h3>Desenvolvimento front-end para web I</h3>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 – Desenvolvimento Front-End Para Web I - Guilherme Saraiva</title>
+    <meta name="description"
+        content="WDD 231 – Desenvolvimento Front-End Para Web I - Guilherme Saraiva - Sobre mim, meu aprendizado com a BYU">
+    <meta name="author" content="Guilherme Saraiva">
+
+    <link rel="stylesheet" href="estilos/telas-pequenas.css">
+    <link rel="stylesheet" href="estilos/telas-grandes.css">
+    <script src="scripts/navegacao.js" defer></script>
+    <script src="scripts/data.js" defer></script>
+    <script src="scripts/curso.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="imagens/logo.svg" alt="imagem logotipo">
+        <span>Guilherme Saraiva</span>
+        <button id="ham-btn" class="hamburguer" aria-label="botao-menu"></button>
+    </header>
+
+    <nav id="nav-bar" class="navegacao">
+        <ul>
+            <li><a href="#">Página Inicial</a></li>
+            <li><a href="#">Projeto da Câmara</a></li>
+            <li><a href="#">Projeto Final</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Início</h1>
+
+        <section>            
+            <h2>Sobre Mim</h2>
+            <div class="txt-sobre-mim">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus velit voluptatibus animi, saepe ad
+                    temporibus ipsum fugit exercitationem vero maxime et dignissimos ullam inventore eum, adipisci
+                    reprehenderit! Impedit et ea atque sunt deserunt sit alias assumenda praesentium? Ipsum sequi enim,
+                    porro eum totam velit dolor cum architecto possimus esse quo asperiores iure voluptatum maxime unde
+                    atque fugiat. Adipisci, eaque atque!</p>
+            </div>            
+        </section>
+
+        <section>
+            <h2>Foto do Estudante</h2>
+            <div class="minha-foto">
+                <img src="imagens/minha-foto.png" alt="minha foto">
+            </div>
+        </section>
+
+        <section class="cursos">
+            <h2>Cursos de Certificado Web</h2>
+            <div class="container-btn-cursos">
+                <button class="btn-curso btn-todos">Todos</button>
+                <button class="btn-curso btn-cse">CSE</button>
+                <button class="btn-curso btn-wdd">WDD</button>
+            </div>
+            <div class="container-cursos">
+                <div class="cursos-cse"></div>
+                <div class="cursos-wdd"></div>
+            </div>
+            <span class="creditos">Selecione os cursos e veja os créditos.</span>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social">
+            <a href="https://github.com/Gui-Saraiva" target="_blank"><img src="imagens/github.svg" alt="github"
+                    width="16" height="16"></a>
+            <a href="https://www.linkedin.com/in/guidesignstudio/" target="_blank"><img src="imagens/linkedin.svg"
+                    alt="linkedin" width="16" height="16"></a>
+            <a href="https://www.facebook.com/guilherme.saraiva.169432" target="_blank"><img src="imagens/facebook.svg"
+                    alt="facebook" width="16" height="16"></a>
+            <a href="https://www.instagram.com/guidesign.arte/" target="_blank"><img src="imagens/instagram.svg"
+                    alt="instagram" width="16" height="16"></a>
+        </div>
+        <div class="rodape">
+            <p>&copy; <span id="anoatual"></span> &#10070; Guilherme Saraiva &#10070; São Paulo, Brasil</p>
+            <p id="ultimaMoficacao"></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg1"
+   width="29"
+   height="39"   
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <linearGradient
+       id="linearGradient20">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop20" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1"
+         offset="1"
+         id="stop21" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient17">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop18" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop19" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient16">
+    </linearGradient>
+    <linearGradient
+       x1="6.5900002"
+       y1="8.4200001"
+       x2="6.5900002"
+       y2="15.99"
+       gradientUnits="userSpaceOnUse"
+       spreadMethod="pad"
+       id="linearGradient9">
+    </linearGradient>
+    <linearGradient
+       x1="36.41"
+       y1="14.26"
+       x2="36.41"
+       y2="11.6"
+       gradientUnits="userSpaceOnUse"
+       spreadMethod="pad"
+       id="linearGradient11">
+    </linearGradient>
+    <linearGradient
+       x1="1.33"
+       y1="6.4899998"
+       x2="1.33"
+       y2="18.59"
+       gradientUnits="userSpaceOnUse"
+       spreadMethod="pad"
+       id="linearGradient13">
+    </linearGradient>
+
+    <linearGradient
+       xlink:href="#linearGradient17"
+       id="linearGradient19"
+       x1="1.6378486"
+       y1="36.560131"
+       x2="1.747884"
+       y2="8.8986864"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       xlink:href="#linearGradient20"
+       id="linearGradient21"
+       x1="6.6080194"
+       y1="31.767591"
+       x2="6.3465018"
+       y2="9.9296112"
+       gradientUnits="userSpaceOnUse" />
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath24">
+    </clipPath>
+  </defs>
+  <g
+     id="layer-Pr12">
+    <path
+       id="path2"
+       d="M 19.8133,5.5182 10.713,0 0,6.4882 v 12.1003 l 8.7792,5.373 h 5.0802 L 2.6578,17.106 V 7.9724 l 8.054,-4.8773 9.1015,5.5185 z"
+       style="fill:#ffcc29;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       transform="matrix(1.3333333,0,0,-1.3333333,1.3333333,33.282)"/>
+    <path
+       id="path3"
+       d="m 13.316,15.0001 6.4973,-4.172 V 5.5182 l -2.658,1.4831 v 2.3811 l -6.3491,4.0773 z"
+       style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       transform="matrix(1.3333333,0,0,-1.3333333,1.3333333,33.282)"/>
+    <path
+       id="path4"
+       d="m 17.1553,7.0013 -2.0319,1.1338 2.0319,1.2473 z"
+       style="fill:#ffcc29;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       transform="matrix(1.3333333,0,0,-1.3333333,1.3333333,33.282)" />
+    <path
+       id="path5"
+       d="M 7.5949,10.7382 10.6951,8.8611 12.2947,9.8427 15.1234,8.1351 10.7116,5.4261 4.6517,9.0955 Z"
+       style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       transform="matrix(1.3333333,0,0,-1.3333333,1.3333333,33.282)" />
+    <path
+       id="path6"
+       d="m 15.1733,18.9675 -7.5784,-4.6219 -2.9432,1.6432 9.2273,5.6285 1.2943,-0.8306 z"
+       style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       transform="matrix(1.3333333,0,0,-1.3333333,1.3333333,33.282)" />
+    <path
+       id="path9"
+       d="M 7.5949,14.3456 4.6517,15.9888 V 9.0955 L 5.7677,8.42 8.5303,10.1721 7.5949,10.7382 Z"
+       transform="matrix(1.3333333,0,0,-1.3333333,1.3333333,33.282)"
+       style="fill:url(#linearGradient21);fill-rule:evenodd;stroke:none;fill-opacity:1" />
+    <path
+       id="path13"
+       d="M 0,18.5885 2.6578,17.106 V 7.9724 L 0,6.4882 Z"
+       transform="matrix(1.3333333,0,0,-1.3333333,1.3333333,33.282)"
+       style="fill:url(#linearGradient19);fill-rule:evenodd;stroke:none;fill-opacity:1" />
+  </g>
+</svg>

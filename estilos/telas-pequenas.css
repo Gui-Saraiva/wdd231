@@ -1,0 +1,210 @@
+:root {
+    --amarelo-padrao: #FFCC29;
+    --amarelo-medio: #fff598;
+    --amarelo-claro: #FFFBD6;
+}
+
+* {
+    font-family: "Josefin Sans", sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--amarelo-claro);
+}
+
+/******* header ********/
+
+header {    
+    display: grid;
+    grid-template-columns: 30px auto 44px;
+    padding: 5px 0 5px 10px;    
+    column-gap: 12px;
+    align-items: center;
+    background: black;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-top: 4px;
+    margin-left: 3px;  
+}
+
+header span {    
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.hamburguer {    
+    width: 100%;
+    padding-bottom: 4px;
+    padding-right: 10px;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburguer::after { 
+    display: block;
+    content: "\2630";
+    font-size: 2rem;   
+    height: 43px;        
+}
+
+.hamburguer.show::after {
+    content: "\00D7";    
+}
+
+/******* nav ********/
+
+.navegacao {
+    display: none;
+}
+
+.navegacao.show {
+    display: block;
+}
+
+.navegacao ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navegacao a {
+    display: block;
+    background: var(--amarelo-padrao);
+    color: black;
+    padding: .8rem 15px;    
+    text-decoration: none;
+    border-bottom: solid 1px var(--amarelo-claro);    
+}
+
+.navegacao a:hover {
+    background: #daa700;
+}
+
+/******* main ********/
+
+main {
+    padding: 10px;
+}
+
+main h1 {
+    padding-left: 3px;
+    padding-bottom: 10px;
+}
+
+main h2 {
+    background: var(--amarelo-padrao);
+    padding: 8px;
+    text-align: center;
+}
+
+.txt-sobre-mim {
+    padding: 15px 20px;
+    line-height: 1.5;
+    background: var(--amarelo-medio);
+    margin-bottom: 15px;
+}
+
+.minha-foto {
+    background: var(--amarelo-medio);
+    margin-bottom: 15px;
+}
+
+section img {    
+    width: 100%;
+    padding: 25px;
+    border-radius: 40px;
+}
+
+section.cursos {
+    text-align: center;    
+}
+
+.cursos .container-btn-cursos {
+    display: flex;    
+    justify-content: space-between;    
+    margin: 10px 0;
+    gap: 10px;
+}
+
+.cursos .btn-curso {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    flex: 1;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.cursos .btn-curso:hover {
+    background-color: rgb(68, 68, 68);
+}
+
+.container-cursos {
+    display: flex;
+    flex-direction: column;    
+    gap: 10px;    
+}
+
+.cursos-cse:empty, 
+.cursos-wdd:empty {
+    display: none;
+}
+
+.cursos-cse,
+.cursos-wdd {    
+    display: flex;
+    flex-direction: column;  
+    gap: 10px;    
+}
+
+.cursos-byu {    
+    background-color: var(--amarelo-medio);
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 700;
+    flex: 1;
+}
+
+.cursando {
+    background-color: rgb(211, 211, 211);
+    color: rgb(92, 92, 92);
+}
+
+.creditos {
+    display: block;
+    padding: 10px;    
+}
+
+/******* footer ********/
+
+.social {
+    display: flex;    
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 15px; 
+}
+
+.social img {    
+    width: 50px;
+    height: auto;
+}
+
+footer .rodape {
+    background-color: var(--amarelo-padrao);
+    text-align: center;
+    padding: 10px;
+    line-height: 1.5;
+}
