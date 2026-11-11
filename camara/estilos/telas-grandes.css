@@ -1,0 +1,42 @@
+@media screen and (min-width: 700px) {
+    .container-cards.lista .cards {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 2fr 1fr;        
+        align-items: center;
+        gap: 15px;
+    }
+
+    .hamburguer,
+    .circulo-dividido {
+        display: none;
+    }
+
+    header {
+        position: relative;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        gap: 40px;        
+    }
+
+    header nav a {
+        background: none;
+        color: white;
+        height: 0;        
+    }
+
+    header nav a:hover {
+        color: var(--amarelo-padrao);        
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

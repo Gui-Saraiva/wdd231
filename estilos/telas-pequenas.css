@@ -58,7 +58,7 @@ header span {
 }
 
 .hamburguer.show::after {
-    content: "\00D7";    
+    content: "\00D7";
 }
 
 /******* nav ********/

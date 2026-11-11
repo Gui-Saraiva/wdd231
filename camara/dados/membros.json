@@ -1,0 +1,60 @@
+{
+    "membros": [
+        {
+            "empresa": "Grafica Confiart",
+            "endereco": "Rua D. Pedro I, 874 - Vila Nova - Cubatão/SP",
+            "telefone": "13 3361-8794",
+            "urlSite": "www.graficaconfiart.com.br",
+            "imagem": "imagens/grafica-confiart-logo.webp",
+            "nivelAssociacao": 3
+        },
+        {
+            "empresa": "Projetus Informática",
+            "endereco": "Rua Andrade Neves, 870 - Centro - Rio Pardo/RS",
+            "telefone": "51 3731-3333",
+            "urlSite": "www.projetusinfo.com.br",
+            "imagem": "imagens/projetus-logo.webp",
+            "nivelAssociacao": 2
+        },
+        {
+            "empresa": "Tecnoplaca",
+            "endereco": "Av. Miguel Couto, 72 - Centro - Cubatão/SP",
+            "telefone": "13 3372-5000",
+            "urlSite": "www.tecnoplaca.com.br",
+            "imagem": "imagens/tecnoplaca-logo.webp",
+            "nivelAssociacao": 2
+        },
+        {
+            "empresa": "Caipa Alimentos",
+            "endereco": "Rua das Rosas, 100 - Cavalhada - Guarujá/SP",
+            "telefone": "13 3361-8795",
+            "urlSite": "www.caipa.com.br",
+            "imagem": "imagens/caipa-logo.webp",
+            "nivelAssociacao": 1
+        },
+        {
+            "empresa": "Servimec Confecções",
+            "endereco": "Rua São João, Costa e Silva - Fortaleza/CE",
+            "telefone": "(85) 3456-7890",
+            "urlSite": "www.servimec.com.br",
+            "imagem": "imagens/servimec-logo.webp",
+            "nivelAssociacao": 2
+        },
+        {
+            "empresa": "Gui Design Studio",
+            "endereco": "Rua General Osório, 696 - Jerivá - Boituva/SP",
+            "telefone": "15 3375-3810",
+            "urlSite": "www.guidesignstudio.com.br",
+            "imagem": "imagens/gui-design-logo.webp",
+            "nivelAssociacao": 3
+        },
+        {
+            "empresa": "Promel Produtos Naturais",
+            "endereco": "Av. Nações Unidas, 189 - Centro - Santos/SP",
+            "telefone": "13 3361-8490",
+            "urlSite": "www.promelsantos.com.br",
+            "imagem": "imagens/promel-logo.webp",
+            "nivelAssociacao": 1
+        }
+    ]
+}
