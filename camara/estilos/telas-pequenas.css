@@ -119,6 +119,12 @@ nav a {
     margin-bottom: 3px;
 }
 
+nav a.pagina-atual {
+    background-color: var(--verde-padrao);
+    color: var(--amarelo-padrao);
+    font-weight: 700;    
+}
+
 nav a:hover {
     background-color: #ffec70;    
 }
