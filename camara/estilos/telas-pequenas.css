@@ -181,6 +181,7 @@ nav a:hover {
     height: auto;
     margin-bottom: 5px;
     border-radius: 7px;
+    object-fit: contain;
 }
 
 .nome-empresa {
@@ -193,8 +194,7 @@ nav a:hover {
 }
 
 /* visualização em lista */
-.container-cards.lista {
-    display: flex;
+.container-cards.lista {    
     flex-direction: column;
     gap: 0;
     padding: 15px;
