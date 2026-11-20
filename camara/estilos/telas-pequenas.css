@@ -242,6 +242,7 @@ main h1 {
 .container-hero img {
     display: block;
     width: 100%;
+    height: auto;
 }
 
 .container-hero .call-to-action {
