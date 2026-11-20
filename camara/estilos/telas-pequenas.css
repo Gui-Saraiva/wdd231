@@ -16,8 +16,6 @@ body {
     flex-direction: column;
 }
 
-
-
 header .container-tarja-verde-header {
     width: 100%;
     height: 75px;
@@ -156,6 +154,14 @@ nav a:hover {
 
 .btn-grade::before {
     content: "\2637";
+}
+
+main h1 {
+    text-align: center;
+    font-size: 1.2rem;
+    background-color: var(--amarelo-padrao);
+    padding: 10px;
+    margin: 0;
 }
 
 .container-cards {
