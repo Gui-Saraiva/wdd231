@@ -1,4 +1,5 @@
 @media screen and (min-width: 700px) {
+    
     .container-cards.lista .cards {
         display: grid;
         grid-template-columns: 2fr 1fr 1fr 2fr 1fr;        
@@ -6,13 +7,15 @@
         gap: 15px;
     }
 
-    .hamburguer,
-    .circulo-dividido {
+    .hamburguer, .circulo-dividido {
         display: none;
     }
 
     header {
         position: relative;
+        display: flex;
+        justify-content: center;
+        background-color: var(--verde-padrao);
     }
 
     header nav {
@@ -21,7 +24,8 @@
         position: absolute;
         top: 15px;
         right: 15px;
-        gap: 40px;        
+        gap: 40px;
+        transform: translateX(min(0px, calc((1400px - 100vw) / 2))); /* Move a nav para acompanhar a centralização da div quando a tela ultrapassa 1400px. */
     }
 
     header nav a {
@@ -34,9 +38,56 @@
         color: var(--amarelo-padrao);        
     }
 
+    header .container-tarja-verde-header {        
+        max-width: 1400px;
+    }
+
+    .container-hero {
+        display: flex;
+        justify-content: center;
+    }
+
+    .container-hero img{
+        max-width: 1400px;
+    }
+
+    .container-hero .call-to-action {
+        transform: translateX(max(0px, calc((100vw - 1400px) / 2)));        
+    }
+
+    .container-hero .eventos {
+        transform: translateX(max(0px, calc((100vw - 1400px) / 2)));
+    }
+
+    .main-diretorio {        
+        width: 100%;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    .main-container-diretorio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .diretorio-empresas {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
     footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    footer .container-footer {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        width: 100%;
+        max-width: 1400px;        
     }
 }

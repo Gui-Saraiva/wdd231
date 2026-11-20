@@ -16,9 +16,7 @@ body {
     flex-direction: column;
 }
 
-main {
-    flex: 1;
-}
+
 
 header .container-tarja-verde-header {
     width: 100%;
@@ -39,7 +37,7 @@ header .container-brasao {
     place-items: center;
     width: 46px;
     height: 50px;
-    background-color: white;    
+    background-color: white;
     border-radius: 7px;
 }
 
@@ -79,7 +77,7 @@ header .container-botoes-nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    line-height: 1;    
+    line-height: 1;
 }
 
 .circulo-dividido {
@@ -112,7 +110,7 @@ nav a {
     display: block;
     background-color: var(--amarelo-padrao);
     text-decoration: none;
-    color: var(--verde-padrao);    
+    color: var(--verde-padrao);
     text-align: center;
     height: 45px;
     line-height: 45px;
@@ -122,11 +120,11 @@ nav a {
 nav a.pagina-atual {
     background-color: var(--verde-padrao);
     color: var(--amarelo-padrao);
-    font-weight: 700;    
+    font-weight: 700;
 }
 
 nav a:hover {
-    background-color: #ffec70;    
+    background-color: #ffec70;
 }
 
 .diretorio-empresas {
@@ -134,12 +132,12 @@ nav a:hover {
     padding: 15px;
     justify-content: space-between;
     align-items: center;
-    font-weight: 700;    
+    font-weight: 700;
 }
 
 .container-btn-diretorio {
     display: flex;
-    gap: 15px;    
+    gap: 15px;
 }
 
 .btn-diretorio {
@@ -149,7 +147,7 @@ nav a:hover {
     font-size: 30px;
     border: 1px solid gray;
     background-color: white;
-    border-radius: 5px;   
+    border-radius: 5px;
 }
 
 .btn-lista::before {
@@ -179,7 +177,7 @@ nav a:hover {
     background-color: #dfdfdf;
     width: 100%;
     max-width: 320px;
-    height: 250px;    
+    height: 250px;
 }
 
 .img-empresa {
@@ -199,8 +197,8 @@ nav a:hover {
     margin-bottom: 2px;
 }
 
-/* visualização em lista */
-.container-cards.lista {    
+/* visualização em lista da pag diretorio */
+.container-cards.lista {
     flex-direction: column;
     gap: 0;
     padding: 15px;
@@ -210,7 +208,7 @@ nav a:hover {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;    
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     max-width: none;
@@ -229,14 +227,138 @@ nav a:hover {
 .container-cards.lista .img-empresa {
     display: none;
 }
-/* fim da visualização em lista */
+
+/* main da pagina index */
+.container-hero {
+    position: relative;
+}
+
+.container-hero img {
+    display: block;
+    width: 100%;
+}
+
+.container-hero .call-to-action {
+    background-color: rgba(7, 137, 48, 0.2);
+    width: 220px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 10px;
+    line-height: 1.4;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.container-hero .call-to-action p {
+    margin-right: 3px;
+    font-weight: 700;
+}
+
+.container-hero .cta-associe {
+    color: rgb(175, 0, 0);
+    font-weight: 700;
+    text-decoration: none;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(175, 0, 0);
+    border-radius: 8px;
+    margin-top: 3px;
+}
+
+.container-hero .eventos {
+    width: 220px;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    line-height: 1.5;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+}
+
+.container-hero .eventos span {
+    margin-right: 3px;
+    font-weight: 700;
+    color: var(--amarelo-padrao);
+}
+
+.container-hero .eventos p {
+    font-size: 15px;
+}
+
+/* cards empresas destaque na index */
+.container-empresas-destaque {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.card-destaque {
+    width: 200px;
+    height: 230px;
+    padding: 10px;
+    font-size: 12px;
+    margin: 15px 10px;
+}
+
+.imagem-card-destaque {
+    width: 80px;
+}
+
+/* PREVISAO DO TEMPO */
+.previsao-tempo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: gray;
+    color: white;
+    padding: 15px;
+    margin: 6px 0 6px 0;
+}
+
+.titulo-previsao {
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.container-outros-dias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;  
+}
+
+.proximo-dia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.proximo-dia figure figcaption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.proximo-dia figure figcaption span {
+    display: block;
+}
 
 footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    
     background-color: var(--amarelo-padrao);
     padding: 15px;
     line-height: 1.5;
@@ -248,11 +370,11 @@ footer span {
 
 footer .container-contatos {
     display: flex;
-    justify-content: center;    
+    justify-content: center;
     gap: 30px;
     margin: 10px;
 }
 
 footer img {
-    width: 50px;    
+    width: 50px;
 }
