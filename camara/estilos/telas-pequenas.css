@@ -445,7 +445,7 @@ form {
     animation: chegarAndando 2s ease-in-out forwards;
 }
 
-.container-associacoes p {
+.titulo-associacao {
     background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
     color: #078930;
@@ -453,12 +453,12 @@ form {
     padding: 7px;
     margin-bottom: 5px;
     border-radius: 5px;
-    color: white;        
+    color: white;
 }
 
 .container-associacoes button {
-    width: 150px;
-    height: 45px;
+    width: 100px;
+    height: 35px;
     border-radius: 5px;
     border: none;
     background-color: rgba(0, 0, 0, 0.6);
@@ -564,8 +564,6 @@ form {
         transform: translateX(0);
     }
 }
-
-
 
 /* PAGINA AGRADECIMENTO --------------------------------*/
 #main-agradecimento {
