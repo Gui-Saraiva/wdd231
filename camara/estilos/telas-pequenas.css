@@ -435,34 +435,36 @@ form {
 }
 
 .container-associacoes {
-    background-color: #d3d3d3;
-    width: 320px;
+    background-color: #d3d3d3;    
     height: 110px;
     display: grid;
     place-items: center;
     border-radius: 5px;
     padding: 10px;
-    margin: 10px;    
-
-    p {
-        background-color: rgba(0, 0, 0, 0.5);
-        width: 100%;
-        color: #078930;
-        text-align: center;
-        padding: 7px;
-        margin-bottom: 5px;
-        border-radius: 5px;
-        color: white;        
-    }
-
-    button {
-        width: 150px;
-        height: 45px;
-        border-radius: 5px;
-        border: none;
-        background-color: rgba(255, 255, 255, 0.7);
-    }
+    margin: 10px;
+    animation: chegarAndando 2s ease-in-out forwards;
 }
+
+.container-associacoes p {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    color: #078930;
+    text-align: center;
+    padding: 7px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    color: white;        
+}
+
+.container-associacoes button {
+    width: 150px;
+    height: 45px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+}
+
 
 .bronze {
     background: linear-gradient(
@@ -518,44 +520,42 @@ form {
     line-height: 1.5;
     margin: auto;    
     inset: 0;
+}
     
-    div {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        gap: 1rem;
+#caixa-dialogo div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
 
-        button {
-            width: 45px;
-            height: 45px;
-            font-size: 2rem;
-            border-radius: 8px;
-            border: 1px solid gray;
-            color: gray;
-        }
-    }
-
-    .p-custo {
-        background-color: #363636;
-        color: white;
-        padding: 10px;
-        border-radius: 5px;
-        margin-top: 10px;
-    }
-
-    span {
-        font-weight: 700;
+    #btn-fechar-modal {
+        width: 45px;
+        height: 45px;
+        font-size: 2rem;
+        border-radius: 8px;
+        border: 1px solid gray;
+        color: gray;
     }
 }
+
+#caixa-dialogo .p-custo {
+    background-color: #363636;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#caixa-dialogo span {
+    font-weight: 700;
+}
+
 
 ::backdrop {
     background-color: rgba(155, 255, 0, 0.5);
 }
 
-.container-associacoes {
-    animation: chegarAndando 2s ease-in-out forwards;
-}
 @keyframes chegarAndando {
     from {
         transform: translateX(200%);
