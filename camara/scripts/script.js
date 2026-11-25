@@ -16,9 +16,13 @@ if (btnGrid && btnLista && exibir) { // execute as duas funçoes abaixo em pagin
     });
 }
 
-btnHamb.addEventListener('click', () => {
-    btnHamb.classList.toggle('open');
-})
+if (btnHamb) {
+    btnHamb.addEventListener('click', () => {
+        btnHamb.classList.toggle('open');
+    })
+}
+
+
 
 async function main() {    
     const membros = await buscarMembros();    
@@ -221,9 +225,94 @@ if (tempoAtual) {
     apiFetchFuturo();
 }
 
+// PÁGINA ASSOCIAÇÃO -----------------------------------------------------------------
+// obter elementos dialog
+const caixaDialogo = document.querySelector("#caixa-dialogo");
+const btnFecharModal = document.querySelector("#btn-fechar-modal");
+const btnFree = document.querySelector(".btn-free");
+const btnBronze = document.querySelector(".btn-bronze");
+const btnPrata = document.querySelector(".btn-prata");
+const btnOuro = document.querySelector(".btn-ouro");
+const dialogH3 = document.querySelector("#dialog-h3");
+const beneficioUm = document.querySelector(".beneficio-um");
+const beneficioBronze = document.querySelector(".beneficio-bronze");
+const beneficioPrata = document.querySelector(".beneficio-prata");
+const beneficioOuro = document.querySelector(".beneficio-ouro");
+const custo = document.querySelector("#custo");
 
+
+
+if(btnBronze && btnFree && btnPrata && btnOuro && btnFecharModal) {
+    btnFree.addEventListener('click', () => {
+        caixaDialogo.showModal();
+        dialogH3.innerHTML = "Associação Sem Fins Lucrativos"
+        beneficioUm.innerHTML = "- Recebe uma placa com um selo do prefeito."
+        beneficioBronze.innerHTML = ""
+        beneficioPrata.innerHTML = ""
+        beneficioOuro.innerHTML = ""
+        custo.innerHTML = "Gratuito"
+    })
+
+    btnBronze.addEventListener('click', () => {
+        caixaDialogo.showModal();
+        dialogH3.innerHTML = "Associação Bronze"
+        beneficioUm.innerHTML = "- Recebe uma placa com um selo do prefeito."
+        beneficioBronze.innerHTML = "- Sua marca no jornal toda semana."
+        beneficioPrata.innerHTML = ""
+        beneficioOuro.innerHTML = ""
+        custo.innerHTML = "R$ 30,00 por ano."
+    })
+    
+    btnPrata.addEventListener('click', () => {
+        caixaDialogo.showModal();
+        dialogH3.innerHTML = "Associação Prata"
+        beneficioUm.innerHTML = "- Recebe uma placa com um selo do prefeito."
+        beneficioBronze.innerHTML = "- Sua marca no jornal toda semana."
+        beneficioPrata.innerHTML = "- Propaganda no carro de som da cidade."
+        beneficioOuro.innerHTML = ""
+        custo.innerHTML = "R$ 50,00 por ano."
+    })
+    
+    btnOuro.addEventListener('click', () => {
+        caixaDialogo.showModal();
+        dialogH3.innerHTML = "Associação Ouro"
+        beneficioUm.innerHTML = "- Recebe uma placa com um selo do prefeito."
+        beneficioBronze.innerHTML = "- Sua marca no jornal toda semana."
+        beneficioPrata.innerHTML = "- Propaganda no carro de som da cidade."
+        beneficioOuro.innerHTML = "- Sua propaganda todo dia no rádio e na TV."
+        custo.innerHTML = "R$ 80,00 por ano."
+    })
+    
+    btnFecharModal.addEventListener('click', () => {
+        caixaDialogo.close();
+    })
+}
+
+/* PÁGINA AGRADECIMENTO --------------------------------------------------------- */
+const resultados = document.querySelector("#dados-novo-associado"); // seleciona a div da página agradecimento
+const dataHora = document.querySelector("#data-hora");
+
+if (dataHora) {
+    dataHora.value = new Date().toLocaleString("pt-BR");
+}
+
+if (resultados) {
+    const info = new URLSearchParams(window.location.search);    
+    resultados.innerHTML = `
+        <p> Nome: <span>${info.get('nome')} ${info.get('sobrenome')}</span> </p>
+        <p> Telefone: <span>${info.get('cel')}</span> </p>
+        <p> E-mail: <span>${info.get('email')}</span> </p>
+        <p> Empresa: <span>${info.get('empresa')}</span> </p>
+        <p> Nível: <span>${info.get('nivel')}</span> <p>
+        <p> Data e Hora: <span>${info.get('data-hora')}</span> </p>
+    `
+}
+
+/* FOOTER ----------------------------------------------------------------------- */
 // configuração do último acesso no footer
 const hoje = new Date();
 let dataCompleta = new Intl.DateTimeFormat('pt-BR', {day: "2-digit", weekday: "long", month: "long", year: "numeric"}).format(hoje);
 
-data.innerHTML = `Última modificação: ${dataCompleta}`;
+if(data) {
+    data.innerHTML = `Última modificação: ${dataCompleta}`;
+}

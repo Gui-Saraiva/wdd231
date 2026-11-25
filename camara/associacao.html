@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Câmara de Comércio</title>
+    <link rel="stylesheet" href="estilos/normalize.css">
+    <link rel="stylesheet" href="estilos/telas-pequenas.css">
+    <link rel="stylesheet" href="estilos/telas-grandes.css">
+    <script src="scripts/script.js" defer></script>
+
+    <!-- tags description e autor -->
+    <meta name="description"
+        content="eventos locais, networking e comércio local. Impulsionar a economia local e prestar suporte a empresas.">
+    <meta name="author" content="Guilherme Fagundes Saraiva">
+
+    <!-- fontes do google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- tag favicon -->
+    <link rel="icon" href="imagens/favicon.ico" type="image/x-icon">
+
+    <!-- tags facebook -->
+    <meta property="og:title" content="Camara de Comercio de Boituva">
+    <meta property="og:description"
+        content="eventos locais, networking e comércio local. Impulsionar a economia local e prestar suporte a empresas.">
+    <meta property="og:url" content="https://www.camaracomercioboituva.com/">
+    <meta property="og:image" content="https://gui-saraiva.github.io/wdd231/camara/boituva.webp">
+</head>
+
+<body>
+    <header>
+        <div class="container-tarja-verde-header">
+            <div class="container-brasao-descricao">
+                <div class="container-brasao">
+                    <img src="imagens/brasao-boituva.webp" alt="brasao de Boituva">
+                </div>
+                <div class="descricao-titulo">
+                    <p>Câmara de Comércio</p>
+                    <p>de <span class="boituva">Boituva/SP</span></p>
+                </div>
+            </div>
+            <div class="container-botoes-nav">
+                <button class="circulo-dividido" aria-label="circulo-dividido"></button>
+                <button id="ham-btn" class="hamburguer" aria-label="botao-menu"></button>
+            </div>
+        </div>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="diretorio.html">Diretório</a>
+            <a href="associacao.html" class="pagina-atual">Associar-se</a>
+            <a href="#">Descobrir</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container-main-associacao">                 
+            <div id="container-formulario">                 
+                <form action="agradecimento.html" target="blank" method="get" id="formulario-cadastro">
+                    <h1>Formulário de Inscrição</h1>  
+                    <label for="nome">nome: *</label>
+                    <input type="text" name="nome" id="nome" autocomplete="given-name" title="digite seu primeiro nome" required>
+
+                    <label for="sobrenome">sobrenome: *</label>
+                    <input type="text" name="sobrenome" id="sobrenome" autocomplete="family-name" title="digite seu sobrenome" required>
+
+                    <label for="cel">celular: *</label>
+                    <input type="tel" name="cel" id="cel" autocomplete="tel" title="digite o numero do celular com traços" placeholder="55-71-1111-1234" required>
+
+                    <label for="email">e-mail: *</label>
+                    <input type="email" name="email" id="email" placeholder="joaocarlos123@gmail.com" title="digite seu e-mail" autocomplete="email" required>
+
+                    <label for="empresa">empresa/organização: *</label>
+                    <input type="text" name="empresa" id="empresa" title="digite o nome da empresa" autocomplete="organization" required>
+
+                    <label for="cargo">cargo:</label>
+                    <input type="text" name="cargo" id="cargo" autocomplete="organization-title" title="digite seu cargo na empresa" pattern="[A-Za-zÀ-ÿ \-]{7,}">
+
+                    <label for="nivel">nível de associação:</label>
+                    <select name="nivel" id="nivel" required>
+                        <option value="" disabled selected>selecione o nivel...</option>
+                        <option value="np">sem fins lucrativos</option>
+                        <option value="bronze">bronze</option>
+                        <option value="prata">prata</option>
+                        <option value="ouro">ouro</option>
+                    </select>
+
+                    <label for="descricao">descrição:</label>
+                    <textarea name="descricao" id="descricao" title="diga algo sobre sua organização" placeholder="fale sobre sua organização..."></textarea>
+
+                    <input type="hidden" name="data-hora" id="data-hora">
+
+                    <button type="submit">ASSOCIAR-SE</button>
+                </form>
+            </div>
+
+            
+
+            <div class="container-cards-niveis">
+                <h2>Níveis de Associação</h2>
+
+                <div class="container-associacoes">            
+                    <p>Sem Fins Lucrativos</p>
+                    <button class="btn-free">Saiba Mais</button>
+                </div>
+
+                <div class="container-associacoes bronze">            
+                    <p>Bronze</p>
+                    <button class="btn-bronze">Saiba Mais</button>
+                </div>
+
+                <div class="container-associacoes prata">            
+                    <p>Prata</p>
+                    <button class="btn-prata">Saiba Mais</button>
+                </div>
+
+                <div class="container-associacoes ouro">            
+                    <p>Ouro</p>
+                    <button class="btn-ouro">Saiba Mais</button>
+                </div>    
+            </div>    
+        </div>
+
+        <dialog id="caixa-dialogo">
+            <div>
+                <h3 id="dialog-h3"></h3>
+                <button id="btn-fechar-modal">X</button>
+            </div>            
+            <p>Os benefícios incluem:</p>
+            <p class="beneficio-um"></p>
+            <p class="beneficio-bronze"></p>
+            <p class="beneficio-prata"></p>
+            <p class="beneficio-ouro"></p>
+            <p class="p-custo">CUSTO: <span id="custo"></span></p>
+        </dialog>
+    </main>
+
+    <footer>
+        <div class="container-footer">
+            <div class="container-footer-contatos">
+                <span>Câmara de Comércio de Boituva</span>
+                <p>Rua General Osório, 696</p>
+                <p>Centro, Boituva/SP</p>
+                <p>info@camaraboituva.com.br</p>
+                <p>(15) 3355-9966</p>
+            </div>
+
+            <div class="container-contatos">
+                <a href="#"><img src="imagens/ico-youtube.svg" alt="youtube" width="50" height="50"></a>
+                <a href="#"><img src="imagens/ico-twitter.svg" alt="twitter" width="50" height="50"></a>
+                <a href="#"><img src="imagens/ico-linkedin.svg" alt="linkedin" width="50" height="50"></a>
+            </div>
+
+            <div class="container-footer-wdd231">
+                <span>Projeto de aula WDD231</span>
+                <p>Guilherme F. Saraiva</p>
+                <p>&copy; 20xx Boituva/SP Câmara de Comércio</p>
+                <p id="ultimaMoficacao"></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

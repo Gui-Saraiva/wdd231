@@ -156,12 +156,20 @@ nav a:hover {
     content: "\2637";
 }
 
-main h1 {
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main h1,
+main h2 {
     text-align: center;
     font-size: 1.2rem;
     background-color: var(--amarelo-padrao);
     padding: 10px;
     margin: 0;
+    width: 100%;
 }
 
 .container-cards {
@@ -361,6 +369,235 @@ main h1 {
     display: block;
 }
 
+/* pagina associação */
+
+#container-formulario {        
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    margin: 0.5rem 1rem;
+  
+    label {
+      display: block;
+      font-size: 0.9rem;
+      color: black;
+      padding: 0.1rem 0;
+    }
+  
+    input[type="text"],
+    input[type="tel"],    
+    input[type="email"],
+    select {
+      display: block;
+      margin: 0.1rem 0 0.8rem 0;
+      padding: 0.3rem;
+      border: 1px solid #999;
+      border-radius: 5px;
+      border-left-width: 5px;
+      font-size: 1rem;
+      color: #3d405b;
+      width: 320px;
+      height: 44px;
+    }
+    
+    button {
+        background-color: #078930;
+        border: none;
+        padding: 1rem;
+        border-radius: 8px;
+        color: white;
+        display: block;
+        cursor: pointer;
+        margin: 1rem 0;
+        width: 320px;
+        font-weight: 700;
+    }
+
+    input:required {
+      border-left-color: #d70000;
+    }
+    input:focus {
+      border-left-color: black;
+      outline: none;
+    }
+    input:required:valid {
+      border-left-color: var(--verde-padrao);
+    }
+
+    textarea {
+        width: 320px;
+        height: 150px;
+        padding: 5px;
+        border-radius: 5px;
+    }
+}
+
+.container-associacoes {
+    background-color: #d3d3d3;
+    width: 320px;
+    height: 110px;
+    display: grid;
+    place-items: center;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;    
+
+    p {
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        color: #078930;
+        text-align: center;
+        padding: 7px;
+        margin-bottom: 5px;
+        border-radius: 5px;
+        color: white;        
+    }
+
+    button {
+        width: 150px;
+        height: 45px;
+        border-radius: 5px;
+        border: none;
+        background-color: rgba(255, 255, 255, 0.7);
+    }
+}
+
+.bronze {
+    background: linear-gradient(
+    135deg,
+    #F5C77E 0%,
+    #CD7F32 25%,
+    #8C4A16 50%,
+    #E6A756 75%,
+    #A65E20 100%
+    );
+    border: 1px solid #8C4A16;
+}
+
+.prata {
+    background: linear-gradient(
+    135deg,
+    #FFFFFF 0%,
+    #C0C0C0 20%,
+    #777777 40%,
+    #F5F5F5 55%,
+    #A8A8A8 75%,
+    #FFFFFF 100%
+    );
+    border: 1px solid gray;
+}
+
+.ouro {
+    background: linear-gradient(
+    135deg,
+    #FFF2A6 0%,
+    #D4AF37 20%,
+    #8C6B12 40%,
+    #FFE680 55%,
+    #B8860B 75%,
+    #FFF2A6 100%
+    );
+    border: 1px solid #8C6B12;
+}
+
+/* REFERE-SE AOS DIALOG MODAIS ------------------------ */
+
+/* faz o dialog iniciar fechado */
+#caixa-dialogo:not([open]) {
+    display: none;
+}
+
+#caixa-dialogo {
+    display: flex;
+    flex-direction: column;    
+    padding: 1rem;
+    border-radius: 10px;
+    border: 2px solid gray;
+    line-height: 1.5;
+    margin: auto;    
+    inset: 0;
+    
+    div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        gap: 1rem;
+
+        button {
+            width: 45px;
+            height: 45px;
+            font-size: 2rem;
+            border-radius: 8px;
+            border: 1px solid gray;
+            color: gray;
+        }
+    }
+
+    .p-custo {
+        background-color: #363636;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+
+    span {
+        font-weight: 700;
+    }
+}
+
+::backdrop {
+    background-color: rgba(155, 255, 0, 0.5);
+}
+
+.container-associacoes {
+    animation: chegarAndando 2s ease-in-out forwards;
+}
+@keyframes chegarAndando {
+    from {
+        transform: translateX(200%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+
+
+/* PAGINA AGRADECIMENTO --------------------------------*/
+#main-agradecimento {
+    h1 {
+        padding: 15px 0 0 0;
+    }
+
+    h2 {
+        padding: 5px 0 15px 0;
+    }
+
+    div {
+        line-height: 2;
+        padding: 10px;
+        border: 2px solid var(--verde-padrao);
+        border-radius: 10px;
+        padding: 20px;
+        margin-top: 15px;
+    }
+
+    p {
+        color: var(--verde-padrao);
+        font-weight: 600;
+    }
+
+    span {
+        color: black;
+        font-weight: 100;
+    }
+}
+
+/* CONTEUDO DO FOOTER ----------------------------------*/
 footer {
     display: flex;
     flex-direction: column;
